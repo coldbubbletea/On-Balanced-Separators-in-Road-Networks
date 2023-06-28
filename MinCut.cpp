@@ -4,6 +4,7 @@
 #include<list>
 #include <utility>
 #include<queue>
+#include<set>
 namespace Base
 {
 	struct Edge
@@ -52,7 +53,7 @@ public:
 	bool BFS(int s, int t);
 	int sendFlow(int s, int flow, int t, long long unsigned int ptr[]);
 	int DinicMaxflow(int s, int t);
-	std::list<std::pair<int,int>> MinCut(int s, int t);
+	std::pair<std::set<int>,std::set<int>> MinCut(int s);
 };
 
 
@@ -178,11 +179,38 @@ int Graph::DinicMaxflow(int s, int t)
 
 
 
-std::list<std::pair<int,int>> Graph::MinCut(int s, int t)
+ std::pair<std::set<int>,std::set<int>> Graph::MinCut(int s)
 {
 	std::queue<int> q;
-	for(auto i=0;i<adj[s].size();i++)
-		std::cout<<g.adj[1][i].flow<<std::endl;
+	std::set<int> s1,s2;
+	for(auto i=0;i<adj[s].size();++i)
+	{
+		std::cout<<adj[s][i].capacity-adj[s][i].flow<<std::endl;
+		if((adj[s][i].capacity-adj[s][i].flow)>0)
+		{
+			q.push(adj[s][i].v);
+			s1.insert(adj[s][i].v);
+		}
+	}
+	while(int tmp=q.front())
+	{
+		q.pop();
+		for(auto i=0;i<adj[tmp].size();++i)
+		{
+			
+			if((adj[tmp][i].capacity-adj[tmp][i].flow)>0)
+			{
+				
+				q.push(adj[tmp][i].v);
+				s1.insert(adj[tmp][i].v);
+			}
+		}
+	}
+	for(auto i=s1.begin();i!=s1.end();i++)
+	{
+		std::cout<<*i<<std::endl;
+	}
+	return std::make_pair(s1,s2);
 }
 
 
@@ -198,22 +226,20 @@ int main()
 	
 
 		
-	g.addEdge(0, 1, 10);
-	g.addEdge(0, 2, 10);
-	g.addEdge(1, 2, 2);
-	g.addEdge(1, 3, 4);
-	g.addEdge(1, 4, 8);
-	g.addEdge(2, 4, 9);
-	g.addEdge(4, 3, 5);
-	g.addEdge(3, 5, 9);
-	g.addEdge(4, 5, 10);
+	g.addEdge(0, 1, 4);
+	g.addEdge(0, 2, 2);
+	g.addEdge(1, 2, 1);
+	g.addEdge(1, 3, 2);
+	g.addEdge(2, 4, 2);
+	g.addEdge(1, 4, 4);
+	g.addEdge(3, 5, 3);
+	g.addEdge(4, 5, 3);
 	
 	
     
 	
 	std::cout << g.DinicMaxflow(0,5)<<std::endl;
-	for(auto i=0;i<g.adj[1].size();i++)
-		std::cout<<g.adj[1][i].flow<<std::endl;
+	g.MinCut(0);
 	return 0;
 }
 
