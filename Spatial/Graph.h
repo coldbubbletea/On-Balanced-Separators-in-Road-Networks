@@ -1,7 +1,7 @@
 #include<vector>
 
 
-namespace Base
+namespace Spatial
 {
 	struct Node
 	{

@@ -1,7 +1,7 @@
 #include"Graph.h"
 
 
-namespace Base
+namespace Spatial
 {
     void Graph::addNode(int nodeID, double lat, double lon)
     {
