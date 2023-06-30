@@ -69,31 +69,47 @@ include CMakeFiles/INERTIAL_FLOW.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/INERTIAL_FLOW.dir/flags.make
 
-CMakeFiles/INERTIAL_FLOW.dir/MinCut.cpp.o: CMakeFiles/INERTIAL_FLOW.dir/flags.make
-CMakeFiles/INERTIAL_FLOW.dir/MinCut.cpp.o: ../MinCut.cpp
-CMakeFiles/INERTIAL_FLOW.dir/MinCut.cpp.o: CMakeFiles/INERTIAL_FLOW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Workspace/inertial-flow/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/INERTIAL_FLOW.dir/MinCut.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/INERTIAL_FLOW.dir/MinCut.cpp.o -MF CMakeFiles/INERTIAL_FLOW.dir/MinCut.cpp.o.d -o CMakeFiles/INERTIAL_FLOW.dir/MinCut.cpp.o -c /Workspace/inertial-flow/MinCut.cpp
+CMakeFiles/INERTIAL_FLOW.dir/main.cpp.o: CMakeFiles/INERTIAL_FLOW.dir/flags.make
+CMakeFiles/INERTIAL_FLOW.dir/main.cpp.o: ../main.cpp
+CMakeFiles/INERTIAL_FLOW.dir/main.cpp.o: CMakeFiles/INERTIAL_FLOW.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Workspace/inertial-flow/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/INERTIAL_FLOW.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/INERTIAL_FLOW.dir/main.cpp.o -MF CMakeFiles/INERTIAL_FLOW.dir/main.cpp.o.d -o CMakeFiles/INERTIAL_FLOW.dir/main.cpp.o -c /Workspace/inertial-flow/main.cpp
 
-CMakeFiles/INERTIAL_FLOW.dir/MinCut.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/INERTIAL_FLOW.dir/MinCut.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Workspace/inertial-flow/MinCut.cpp > CMakeFiles/INERTIAL_FLOW.dir/MinCut.cpp.i
+CMakeFiles/INERTIAL_FLOW.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/INERTIAL_FLOW.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Workspace/inertial-flow/main.cpp > CMakeFiles/INERTIAL_FLOW.dir/main.cpp.i
 
-CMakeFiles/INERTIAL_FLOW.dir/MinCut.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/INERTIAL_FLOW.dir/MinCut.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Workspace/inertial-flow/MinCut.cpp -o CMakeFiles/INERTIAL_FLOW.dir/MinCut.cpp.s
+CMakeFiles/INERTIAL_FLOW.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/INERTIAL_FLOW.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Workspace/inertial-flow/main.cpp -o CMakeFiles/INERTIAL_FLOW.dir/main.cpp.s
+
+CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.o: CMakeFiles/INERTIAL_FLOW.dir/flags.make
+CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.o: ../spatial/Graph.cpp
+CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.o: CMakeFiles/INERTIAL_FLOW.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Workspace/inertial-flow/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.o -MF CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.o.d -o CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.o -c /Workspace/inertial-flow/spatial/Graph.cpp
+
+CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Workspace/inertial-flow/spatial/Graph.cpp > CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.i
+
+CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Workspace/inertial-flow/spatial/Graph.cpp -o CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.s
 
 # Object files for target INERTIAL_FLOW
 INERTIAL_FLOW_OBJECTS = \
-"CMakeFiles/INERTIAL_FLOW.dir/MinCut.cpp.o"
+"CMakeFiles/INERTIAL_FLOW.dir/main.cpp.o" \
+"CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.o"
 
 # External object files for target INERTIAL_FLOW
 INERTIAL_FLOW_EXTERNAL_OBJECTS =
 
-INERTIAL_FLOW: CMakeFiles/INERTIAL_FLOW.dir/MinCut.cpp.o
+INERTIAL_FLOW: CMakeFiles/INERTIAL_FLOW.dir/main.cpp.o
+INERTIAL_FLOW: CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.o
 INERTIAL_FLOW: CMakeFiles/INERTIAL_FLOW.dir/build.make
 INERTIAL_FLOW: CMakeFiles/INERTIAL_FLOW.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Workspace/inertial-flow/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable INERTIAL_FLOW"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Workspace/inertial-flow/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable INERTIAL_FLOW"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/INERTIAL_FLOW.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

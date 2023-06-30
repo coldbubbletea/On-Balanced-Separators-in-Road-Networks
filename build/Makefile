@@ -129,29 +129,53 @@ INERTIAL_FLOW/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/INERTIAL_FLOW.dir/build.make CMakeFiles/INERTIAL_FLOW.dir/build
 .PHONY : INERTIAL_FLOW/fast
 
-MinCut.o: MinCut.cpp.o
-.PHONY : MinCut.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-MinCut.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/INERTIAL_FLOW.dir/build.make CMakeFiles/INERTIAL_FLOW.dir/MinCut.cpp.o
-.PHONY : MinCut.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INERTIAL_FLOW.dir/build.make CMakeFiles/INERTIAL_FLOW.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-MinCut.i: MinCut.cpp.i
-.PHONY : MinCut.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-MinCut.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/INERTIAL_FLOW.dir/build.make CMakeFiles/INERTIAL_FLOW.dir/MinCut.cpp.i
-.PHONY : MinCut.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INERTIAL_FLOW.dir/build.make CMakeFiles/INERTIAL_FLOW.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-MinCut.s: MinCut.cpp.s
-.PHONY : MinCut.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-MinCut.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/INERTIAL_FLOW.dir/build.make CMakeFiles/INERTIAL_FLOW.dir/MinCut.cpp.s
-.PHONY : MinCut.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INERTIAL_FLOW.dir/build.make CMakeFiles/INERTIAL_FLOW.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+spatial/Graph.o: spatial/Graph.cpp.o
+.PHONY : spatial/Graph.o
+
+# target to build an object file
+spatial/Graph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INERTIAL_FLOW.dir/build.make CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.o
+.PHONY : spatial/Graph.cpp.o
+
+spatial/Graph.i: spatial/Graph.cpp.i
+.PHONY : spatial/Graph.i
+
+# target to preprocess a source file
+spatial/Graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INERTIAL_FLOW.dir/build.make CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.i
+.PHONY : spatial/Graph.cpp.i
+
+spatial/Graph.s: spatial/Graph.cpp.s
+.PHONY : spatial/Graph.s
+
+# target to generate assembly for a file
+spatial/Graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INERTIAL_FLOW.dir/build.make CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.s
+.PHONY : spatial/Graph.cpp.s
 
 # Help Target
 help:
@@ -162,9 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... INERTIAL_FLOW"
-	@echo "... MinCut.o"
-	@echo "... MinCut.i"
-	@echo "... MinCut.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... spatial/Graph.o"
+	@echo "... spatial/Graph.i"
+	@echo "... spatial/Graph.s"
 .PHONY : help
 
 
