@@ -5,21 +5,7 @@
 #include <utility>
 #include<queue>
 #include<set>
-namespace Base
-{
-	struct Edge
-	{
-		int v; 
-	
-		int flow; 
-		
-		int capacity; 
-		
-		int u_index; 
-	};
-}
-
-
+#include"Util.h"
 
 
 // Residual Graph
