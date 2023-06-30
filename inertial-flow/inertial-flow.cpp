@@ -10,7 +10,7 @@
 #include <vector>
 #include <tbb/blocked_range.h>
 #include <tbb/parallel_for.h>
-
+#include "util.hpp"
 
 struct SpatialOrder
 {
@@ -45,7 +45,7 @@ SpatialOrder makeSpatialOrder(const BisectionGraphView &view, const double ratio
 
     const std::size_t n = ratio * embedding.size();
 
-    Util::reorderFirstLast(embedding, n, spatially);
+    util::reorderFirstLast(embedding, n, spatially);
 
     SpatialOrder order;
 
