@@ -1,6 +1,7 @@
+#ifndef GRAPH_HPP_
+#define GRAPH_HPP_
 #include<vector>
 #include <unordered_map>
-
 namespace spatial
 {
 
@@ -13,7 +14,7 @@ namespace spatial
 
     struct Edge
 	{
-		int v; 
+		int node_id; 
 	
 		int flow; 
 		
@@ -25,7 +26,10 @@ namespace spatial
 	class Graph
 	{
 		public:
-		std::unordered_map<unsigned long long, Coordinate> V;
+		long long vNum;
+		std::unordered_map<unsigned long long, Coordinate> v2Coordinate;
 		void addNode(int nodeID, double lat, double lon);
 	};
 }
+
+#endif 

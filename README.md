@@ -20,6 +20,17 @@ https://daniel-j-h.github.io/post/selection-algorithms-for-partitioning/
 
 A: It is equivalent to single-source single-sink version.
 
+
+
+### Settings
+
+#### b: source_sink_rate
+According to paper, we will init b*|V| source nodes and also this amount of sink nodes. 
+According to their experiment result, seems set default value of b as 0.25 is a good idea.
+
+### unit weight
+As we just care about the coordinate and relation of edges(way of link), we can use unit weight.
+
 ### data:
 
 9th DIMACS Implementation Challenge - Shortest Paths:

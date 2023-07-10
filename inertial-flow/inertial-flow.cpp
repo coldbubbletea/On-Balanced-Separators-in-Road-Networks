@@ -11,7 +11,7 @@
 #include <tbb/blocked_range.h>
 #include <tbb/parallel_for.h>
 #include "util.hpp"
-
+#include"../spatial/Graph.hpp"
 struct SpatialOrder
 {
     std::unordered_set<Spatial::Node> sources;
@@ -60,14 +60,6 @@ SpatialOrder makeSpatialOrder(const BisectionGraphView &view, const double ratio
 
     return order;
 }
-
-
-
-
-
-
-
-
 
 
 

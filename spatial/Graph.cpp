@@ -8,6 +8,6 @@ namespace spatial
     void Graph::addNode(int nodeID, double lat, double lon)
     {
         Coordinate a{lat, lon };
-        Graph::V[nodeID]=a;
+        Graph::v2Coordinate[nodeID]=a;
     }
 }

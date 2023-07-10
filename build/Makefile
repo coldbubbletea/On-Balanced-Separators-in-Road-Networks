@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/INERTIAL_FLOW.dir/build.make CMakeFiles/INERTIAL_FLOW.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mincut-maxflow/mincut.o: mincut-maxflow/mincut.cpp.o
+.PHONY : mincut-maxflow/mincut.o
+
+# target to build an object file
+mincut-maxflow/mincut.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INERTIAL_FLOW.dir/build.make CMakeFiles/INERTIAL_FLOW.dir/mincut-maxflow/mincut.cpp.o
+.PHONY : mincut-maxflow/mincut.cpp.o
+
+mincut-maxflow/mincut.i: mincut-maxflow/mincut.cpp.i
+.PHONY : mincut-maxflow/mincut.i
+
+# target to preprocess a source file
+mincut-maxflow/mincut.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INERTIAL_FLOW.dir/build.make CMakeFiles/INERTIAL_FLOW.dir/mincut-maxflow/mincut.cpp.i
+.PHONY : mincut-maxflow/mincut.cpp.i
+
+mincut-maxflow/mincut.s: mincut-maxflow/mincut.cpp.s
+.PHONY : mincut-maxflow/mincut.s
+
+# target to generate assembly for a file
+mincut-maxflow/mincut.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INERTIAL_FLOW.dir/build.make CMakeFiles/INERTIAL_FLOW.dir/mincut-maxflow/mincut.cpp.s
+.PHONY : mincut-maxflow/mincut.cpp.s
+
 spatial/Graph.o: spatial/Graph.cpp.o
 .PHONY : spatial/Graph.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mincut-maxflow/mincut.o"
+	@echo "... mincut-maxflow/mincut.i"
+	@echo "... mincut-maxflow/mincut.s"
 	@echo "... spatial/Graph.o"
 	@echo "... spatial/Graph.i"
 	@echo "... spatial/Graph.s"

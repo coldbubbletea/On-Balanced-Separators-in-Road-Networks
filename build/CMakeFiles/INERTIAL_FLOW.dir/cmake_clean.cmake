@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/INERTIAL_FLOW.dir/main.cpp.o"
   "CMakeFiles/INERTIAL_FLOW.dir/main.cpp.o.d"
+  "CMakeFiles/INERTIAL_FLOW.dir/mincut-maxflow/mincut.cpp.o"
+  "CMakeFiles/INERTIAL_FLOW.dir/mincut-maxflow/mincut.cpp.o.d"
   "CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.o"
   "CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.o.d"
   "INERTIAL_FLOW"

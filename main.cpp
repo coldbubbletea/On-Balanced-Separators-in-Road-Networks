@@ -2,6 +2,7 @@
 #include<iostream>
 #include<fstream>
 #include"spatial/Graph.hpp"
+#include"mincut-maxflow/mincut.hpp"
 int main()
 {
 	std::ifstream  GRAPH_COORDINATE("../data/NY_coordinate.txt");
@@ -13,7 +14,7 @@ int main()
 	char occupy;
 	GRAPH_COORDINATE>>occupy>>node_id>>lat>>lon;
 	g.addNode(node_id,lat,lon);
-	std::cout<<g.V[1].lat<<std::endl;
+	std::cout<<g.v2Coordinate[1].lat<<std::endl;
 	// g.addEdge(0, 1, 4);
 	// g.addEdge(0, 2, 2);
 	// g.addEdge(1, 2, 1);

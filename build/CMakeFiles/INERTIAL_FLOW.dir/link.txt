@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic CMakeFiles/INERTIAL_FLOW.dir/main.cpp.o CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.o -o INERTIAL_FLOW 
+/usr/bin/c++ -rdynamic CMakeFiles/INERTIAL_FLOW.dir/main.cpp.o CMakeFiles/INERTIAL_FLOW.dir/mincut-maxflow/mincut.cpp.o CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.o -o INERTIAL_FLOW 
