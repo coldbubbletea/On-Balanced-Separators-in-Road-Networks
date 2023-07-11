@@ -26,9 +26,11 @@ namespace spatial
 	class Graph
 	{
 		public:
-		long long vNum;
+		long long vNum=0; //init value of vNum should be 0
 		std::unordered_map<unsigned long long, Coordinate> v2Coordinate;
+		std::vector<Edge>* adj;
 		void addNode(int nodeID, double lat, double lon);
+		void addEdge(int u, int v, int capacity);
 	};
 }
 

@@ -206,7 +206,6 @@ CMakeFiles/INERTIAL_FLOW.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/erase_if.h \
-  ../mincut-maxflow/mincut.cpp \
   ../mincut-maxflow/mincut.hpp \
   /usr/include/c++/11/algorithm \
   /usr/include/c++/11/bits/stl_algo.h \
@@ -560,6 +559,8 @@ CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.o: ../spatial/Graph.cpp \
   /usr/include/c++/11/bits/vector.tcc
 
 
+../mincut-maxflow/mincut.cpp:
+
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
@@ -579,8 +580,6 @@ CMakeFiles/INERTIAL_FLOW.dir/spatial/Graph.cpp.o: ../spatial/Graph.cpp \
 /usr/include/c++/11/bits/algorithmfwd.h:
 
 /usr/include/c++/11/bits/stl_algo.h:
-
-../mincut-maxflow/mincut.cpp:
 
 ../spatial/Graph.cpp:
 

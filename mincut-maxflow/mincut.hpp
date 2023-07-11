@@ -13,14 +13,18 @@
 #include"../spatial/Graph.hpp"
 class minCut : public spatial::Graph{
 public:
-	
 	bool BFS(int s, int t);
 	int sendFlow(int s, int flow, int t, long long unsigned int ptr[]);
 	int DinicMaxflow(int s, int t);
 	int multiSinkTrans();
 	int* level; // stores level of a node
-	std::vector<spatial::Edge>* adj;
 	std::pair<std::set<int>,std::set<int>> MinCut(int s);
+	minCut(int vNum)
+	{
+		adj = new std::vector<spatial::Edge>[vNum];
+		this->vNum = vNum;
+		level = new int[vNum];
+	}
 };
 
 #endif 
